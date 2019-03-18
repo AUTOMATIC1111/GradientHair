@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GradientHairMaskDef>
+        <defName>MaskAHigh</defName>
+        <mask>GradientHair/MaskAHigh</mask>
+        <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskALow</defName>
+        <mask>GradientHair/MaskALow</mask>
+        <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBHigh</defName>
+        <mask>GradientHair/MaskBHigh</mask>
+        <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBLow</defName>
+        <mask>GradientHair/MaskBLow</mask>
+        <weight>1</weight>
+	</GradientHairMaskDef>
+</Defs>

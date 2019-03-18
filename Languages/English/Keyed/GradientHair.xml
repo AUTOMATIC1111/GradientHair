@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <GradientHairTitle>Gradient Hair</GradientHairTitle>
+  <GradientHairEnable>Enable gradient hair</GradientHairEnable>
+  <SettingChanceMaleName>Male chance</SettingChanceMaleName>
+  <SettingChanceMaleDesc>Chance for a male pawn to get gradient hair, in percents.</SettingChanceMaleDesc>
+  <SettingChanceFemaleName>Female chance</SettingChanceFemaleName>
+  <SettingChanceFemaleDesc>Chance for a female pawn to get gradient hair, in percents.</SettingChanceFemaleDesc>
+  <SettingEnableRandomName>Enable</SettingEnableRandomName>
+  <SettingEnableRandomDesc>Enable gradient hair for newly generated pawns.</SettingEnableRandomDesc>
+</LanguageData>
