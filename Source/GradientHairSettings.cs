@@ -64,8 +64,8 @@ namespace GradientHair
                 if (hueDiff > 0.5f) hueDiff = 0.5f - hueDiff;
                 if (hueDiff < 0.15f) continue;
 
-                colorA = Color.HSVToRGB((float)random.NextDouble(), 0.5f + (float)random.NextDouble() * 0.5f, 0.5f + (float)random.NextDouble() * 0.5f);
-                colorB = Color.HSVToRGB((float)random.NextDouble(), 0.5f + (float)random.NextDouble() * 0.5f, 0.5f + (float)random.NextDouble() * 0.5f);
+                colorA = Color.HSVToRGB(hueA, 0.5f + (float)random.NextDouble() * 0.5f, 0.5f + (float)random.NextDouble() * 0.5f);
+                colorB = Color.HSVToRGB(hueB, 0.5f + (float)random.NextDouble() * 0.5f, 0.5f + (float)random.NextDouble() * 0.5f);
 
                 float distance = (Math.Abs(colorA.r - colorB.r) + Math.Abs(colorA.g - colorB.g) + Math.Abs(colorA.b - colorB.b)) / 3;
                 if (distance < 0.15f) continue;
