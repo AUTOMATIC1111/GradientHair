@@ -85,6 +85,7 @@
     <Compile Include="Graphic_MultiMask.cs" />
     <Compile Include="Patch\PanelAppearance.cs" />
     <Compile Include="Patch\PawnGraphicSet.cs" />
+    <Compile Include="PublicApi.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
