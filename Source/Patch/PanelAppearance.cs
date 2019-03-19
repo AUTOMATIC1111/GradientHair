@@ -21,27 +21,24 @@ namespace GradientHair.Patch
 
         public static void Postfix(CustomPawn customPawn) {
             Pawn pawn = customPawn.Pawn;
-            CompGradientHair comp = pawn.GetComp<CompGradientHair>();
-            if (comp == null) return;
 
-            GradientHairSettings settings = comp.Settings;
-
-            Rect rectToggle = settings.enabled ? rectToggleSmall : rectToggleFull;
+            bool enabled;
+            Color color;
+            if (!PublicApi.GetGradientHair(pawn, out enabled, out color))
+                return;
+            
+            Rect rectToggle = enabled ? rectToggleSmall : rectToggleFull;
             TooltipHandler.TipRegion(rectToggle, "GradientHairEnable".Translate());
-            bool enable = GUI.Toggle(rectToggle, settings.enabled,settings.enabled ? "" : "GradientHairEnable".Translate());
-            if (enable != comp.Settings.enabled)
+            bool enable = GUI.Toggle(rectToggle, enabled, enabled ? "" : "GradientHairEnable".Translate());
+            if (enable != enabled)
             {
-                settings.enabled = enable;
-                if(enable) settings.RandomizeTexture();
+                PublicApi.SetGradientHair(pawn, enable, color);
                 customPawn.MarkPortraitAsDirty();
             }
 
             if (!enable) return;
 
-            settings.colorA = pawn.story.hairColor;
-
             Rect rect = new Rect(40, 381, 27, 27);
-            Color color = settings.colorB;
 
             GUI.color = Color.white;
             GUI.DrawTexture(rect, BaseContent.WhiteTex);
@@ -62,7 +59,7 @@ namespace GradientHair.Patch
 
             if (!CloseEnough(vr, r) || !CloseEnough(vg, g) || !CloseEnough(vb, b))
             {
-                settings.colorB = new Color(vr, vg, vb);
+                PublicApi.SetGradientHair(pawn, true, new Color(vr, vg, vb));
                 customPawn.MarkPortraitAsDirty();
             }
 

@@ -9,7 +9,23 @@ namespace GradientHair
 {
     public class PublicApi
     {
-        public static void SetPawnGradientHair(Pawn pawn, bool enabled, Color color)
+        public static bool GetGradientHair(Pawn pawn, out bool enabled, out Color color)
+        {
+            CompGradientHair comp = pawn.GetComp<CompGradientHair>();
+            if (comp == null)
+            {
+                enabled = false;
+                color = Color.white;
+                return false;
+            }
+
+            GradientHairSettings settings = comp.Settings;
+            enabled = settings.enabled;
+            color = settings.colorB;
+            return true;
+        }
+
+        public static void SetGradientHair(Pawn pawn, bool enabled, Color color)
         {
             CompGradientHair comp = pawn.GetComp<CompGradientHair>();
             if (comp == null) return;
