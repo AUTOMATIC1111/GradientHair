@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
+
+    <Operation Class="GradientHair.PatchOperationAddComp">
         <success>Always</success>
-        <operations>
-            <li Class="PatchOperationTest">
-                <xpath>/Defs/ThingDef[defName="Human"]/comps</xpath>
-                <success>Invert</success>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="Human"]</xpath>
-                <value>
-                    <comps />
-                </value>
-            </li>
-        </operations>
+        <xpath>/Defs/ThingDef[defName="Human"]</xpath>
+        <value>
+            <li Class="GradientHair.CompPropertiesGradientHair"></li>
+        </value>
     </Operation>
 
-	<Operation Class="PatchOperationSequence">
-	  <success>Always</success>
-	  <operations>
-	    <li Class="PatchOperationTest">
-	      <xpath>/Defs/ThingDef[defName="Human"]</xpath>
-	    </li>
-	    <li Class="PatchOperationAdd">
-			<xpath>/Defs/ThingDef[defName="Human"]/comps</xpath>
-			<value>
-				<li Class="GradientHair.CompPropertiesGradientHair">
-			</li>
-			</value>
-		</li>
-	  </operations>
-	</Operation>
+    <Operation Class="GradientHair.PatchOperationAddComp">
+        <success>Always</success>
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace</xpath>
+        <value>
+            <li Class="GradientHair.CompPropertiesGradientHair"></li>
+        </value>
+    </Operation>
+
 </Patch>

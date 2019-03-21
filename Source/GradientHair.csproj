@@ -83,6 +83,7 @@
     <Compile Include="GradientHairModSettingsHelper.cs" />
     <Compile Include="GradientHairSettings.cs" />
     <Compile Include="Graphic_MultiMask.cs" />
+    <Compile Include="PatchOperationAddComp.cs" />
     <Compile Include="Patch\PanelAppearance.cs" />
     <Compile Include="Patch\PawnGraphicSet.cs" />
     <Compile Include="PublicApi.cs" />
@@ -102,7 +103,7 @@
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_StartDate="2000/1/1" BuildVersion_BuildVersioningStyle="None.None.Increment.TimeStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" />
+      <UserProperties BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.Increment.TimeStamp" BuildVersion_StartDate="2000/1/1" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
