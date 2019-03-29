@@ -46,6 +46,6 @@ namespace GradientHair
             return result;
         }
 
-        private XmlContainer value;
+        public XmlContainer value;
     }
 }

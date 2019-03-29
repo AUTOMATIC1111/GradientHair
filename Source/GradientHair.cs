@@ -16,9 +16,16 @@ namespace GradientHair
             var harmony = HarmonyInstance.Create("com.github.automatic1111.gradienthair");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
+
             Type panelAppearance = GenTypes.GetTypeInAnyAssembly("EdB.PrepareCarefully.PanelAppearance");
-            if (panelAppearance != null)
-                harmony.Patch(AccessTools.Method(panelAppearance, "DrawColorSelectorForPawnLayer"), null, new HarmonyMethod(typeof(PanelAppearanceDrawColorSelectorForPawnLayer), "Postfix"));
+            try
+            {
+                if (panelAppearance != null)
+                    harmony.Patch(AccessTools.Method(panelAppearance, "DrawColorSelectorForPawnLayer"), null, new HarmonyMethod(typeof(PanelAppearanceDrawColorSelectorForPawnLayer), "Postfix"));
+            }
+            catch (Exception e) {
+                Log.Error("Failed to patch EdB.PrepareCarefully.PanelAppearance: "+e.ToString());
+            }
             
             settings = GetSettings<GradientHairModSettings>();
         }
