@@ -1,5 +1,5 @@
 ﻿using EdB.PrepareCarefully;
-using Harmony;
+using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +29,7 @@ namespace GradientHair.Patch
             
             Rect rectToggle = enabled ? rectToggleSmall : rectToggleFull;
             TooltipHandler.TipRegion(rectToggle, "GradientHairEnable".Translate());
-            bool enable = GUI.Toggle(rectToggle, enabled, enabled ? "" : "GradientHairEnable".Translate());
+            bool enable = GUI.Toggle(rectToggle, enabled, enabled ? "".Translate() : "GradientHairEnable".Translate());
             if (enable != enabled)
             {
                 PublicApi.SetGradientHair(pawn, enable, color);

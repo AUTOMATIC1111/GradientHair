@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using System.Reflection;
 using UnityEngine;
@@ -13,9 +13,8 @@ namespace GradientHair
 
         public GradientHair(ModContentPack pack) : base(pack)
         {
-            var harmony = HarmonyInstance.Create("com.github.automatic1111.gradienthair");
+            var harmony = new Harmony("com.github.automatic1111.gradienthair");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-
 
             Type panelAppearance = GenTypes.GetTypeInAnyAssembly("EdB.PrepareCarefully.PanelAppearance");
             try
@@ -23,10 +22,11 @@ namespace GradientHair
                 if (panelAppearance != null)
                     harmony.Patch(AccessTools.Method(panelAppearance, "DrawColorSelectorForPawnLayer"), null, new HarmonyMethod(typeof(PanelAppearanceDrawColorSelectorForPawnLayer), "Postfix"));
             }
-            catch (Exception e) {
-                Log.Error("Failed to patch EdB.PrepareCarefully.PanelAppearance: "+e.ToString());
+            catch (Exception e)
+            {
+                Log.Error("Failed to patch EdB.PrepareCarefully.PanelAppearance: " + e.ToString());
             }
-            
+
             settings = GetSettings<GradientHairModSettings>();
         }
 
@@ -45,5 +45,6 @@ namespace GradientHair
         {
             return "GradientHairTitle".Translate();
         }
+
     }
 }
