@@ -4,3 +4,4 @@ Source/obj
 *.csproj.user
 0Harmony.xml
 /packages
+/_PublisherPlus.xml

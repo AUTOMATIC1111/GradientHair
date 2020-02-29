@@ -1,8 +1,8 @@
-﻿using EdB.PrepareCarefully;
-using HarmonyLib;
+﻿using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using UnityEngine;
 using Verse;
@@ -19,8 +19,9 @@ namespace GradientHair.Patch
         static Rect rectToggleSmall = new Rect(19, 383, 17, 23);
         static Rect rectToggleFull = new Rect(19, 383, 192, 23);
 
-        public static void Postfix(CustomPawn customPawn) {
-            Pawn pawn = customPawn.Pawn;
+        public static void Postfix(object customPawn) {
+            var trv = Traverse.Create(customPawn);
+            Pawn pawn = trv.Field<Pawn>("pawn").Value;
 
             bool enabled;
             Color color;
@@ -33,7 +34,7 @@ namespace GradientHair.Patch
             if (enable != enabled)
             {
                 PublicApi.SetGradientHair(pawn, enable, color);
-                customPawn.MarkPortraitAsDirty();
+                trv.Method("MarkPortraitAsDirty").GetValue();
             }
 
             if (!enable) return;
@@ -60,7 +61,7 @@ namespace GradientHair.Patch
             if (!CloseEnough(vr, r) || !CloseEnough(vg, g) || !CloseEnough(vb, b))
             {
                 PublicApi.SetGradientHair(pawn, true, new Color(vr, vg, vb));
-                customPawn.MarkPortraitAsDirty();
+                trv.Method("MarkPortraitAsDirty").GetValue();
             }
 
             GUI.color = Color.white;
