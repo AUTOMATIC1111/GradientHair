@@ -10,6 +10,7 @@ namespace GradientHair
     public class GradientHair : Mod
     {
         public static GradientHairModSettings settings;
+        public static ModContentPack myOwnPack;
 
         public GradientHair(ModContentPack pack) : base(pack)
         {
@@ -28,6 +29,7 @@ namespace GradientHair
             }
 
             settings = GetSettings<GradientHairModSettings>();
+            myOwnPack = pack;
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

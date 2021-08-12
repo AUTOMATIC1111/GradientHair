@@ -8,4 +8,6 @@
   <SettingChanceFemaleDesc>Chance for a female pawn to get gradient hair, in percents.</SettingChanceFemaleDesc>
   <SettingEnableRandomName>Enable</SettingEnableRandomName>
   <SettingEnableRandomDesc>Enable gradient hair for newly generated pawns.</SettingEnableRandomDesc>
+  <GradientHairTab>Gradient</GradientHairTab>
+  <GradientHairAddedByMod>Added by mod: {0}</GradientHairAddedByMod>
 </LanguageData>

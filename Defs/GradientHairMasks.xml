@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<GradientHairMaskDef>
+        <defName>MaskAHigh3</defName>
+        <mask>GradientHair/MaskAHigh3</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskAHigh2</defName>
+        <mask>GradientHair/MaskAHigh2</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
         <defName>MaskAHigh</defName>
         <mask>GradientHair/MaskAHigh</mask>
         <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskAMidHigh</defName>
+        <mask>GradientHair/MaskAMidHigh</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskAMidLow</defName>
+        <mask>GradientHair/MaskAMidLow</mask>
+        <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskALow</defName>
@@ -11,13 +31,102 @@
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
+        <defName>MaskALow2</defName>
+        <mask>GradientHair/MaskALow2</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskALow3</defName>
+        <mask>GradientHair/MaskALow3</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+    
+	<GradientHairMaskDef>
+        <defName>MaskBHigh3</defName>
+        <mask>GradientHair/MaskBHigh3</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBHigh2</defName>
+        <mask>GradientHair/MaskBHigh2</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
         <defName>MaskBHigh</defName>
         <mask>GradientHair/MaskBHigh</mask>
         <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBMidHigh</defName>
+        <mask>GradientHair/MaskBMidHigh</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBMidLow</defName>
+        <mask>GradientHair/MaskBMidLow</mask>
+        <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBLow</defName>
         <mask>GradientHair/MaskBLow</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBLow2</defName>
+        <mask>GradientHair/MaskBLow2</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskBLow3</defName>
+        <mask>GradientHair/MaskBLow3</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+    
+	<GradientHairMaskDef>
+        <defName>MaskCHigh3</defName>
+        <mask>GradientHair/MaskCHigh3</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCHigh2</defName>
+        <mask>GradientHair/MaskCHigh2</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCHigh</defName>
+        <mask>GradientHair/MaskCHigh</mask>
+        <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCMidHigh</defName>
+        <mask>GradientHair/MaskCMidHigh</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCMidLow</defName>
+        <mask>GradientHair/MaskCMidLow</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCLow</defName>
+        <mask>GradientHair/MaskCLow</mask>
+        <weight>1</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCLow2</defName>
+        <mask>GradientHair/MaskCLow2</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+	<GradientHairMaskDef>
+        <defName>MaskCLow3</defName>
+        <mask>GradientHair/MaskCLow3</mask>
+        <weight>0.05</weight>
+	</GradientHairMaskDef>
+    
+	<GradientHairMaskDef>
+        <defName>MaskNone</defName>
+        <mask>GradientHair/MaskNone</mask>
+        <weight>0</weight>
+	</GradientHairMaskDef>
 </Defs>
+    

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,14 +12,24 @@ namespace GradientHair
     public class GradientHairSettings : IExposable
     {
         public GradientHairSettings() {
+
         }
 
         static System.Random random = new System.Random();
 
         public bool enabled = false;
-        public Color colorA;
         public Color colorB;
         public string mask;
+
+        public bool? desiredEnabled;
+        public Color? desiredColorB;
+        public string desiredMask;
+
+        public bool SameAs(GradientHairSettings other) {
+            if (!enabled && !other.enabled) return true;
+
+            return enabled == other.enabled && colorB == other.colorB && mask == other.mask;
+        }
 
         public void Randomize(Pawn pawn)
         {
@@ -40,7 +51,8 @@ namespace GradientHair
 
             RandomizeTexture();
 
-            RandomizeColors();
+            Color colorA;
+            RandomizeColors(out colorA);
 
             if (enabled)
             {
@@ -54,8 +66,10 @@ namespace GradientHair
             mask = def.mask;
         }
 
-        public void RandomizeColors()
+        public void RandomizeColors(out Color colorA)
         {
+            colorA = Color.white;
+
             for (int i = 0; i < 10; i++)
             {
                 float hueA = (float)random.NextDouble();
@@ -77,9 +91,12 @@ namespace GradientHair
         public void ExposeData()
         {
             Scribe_Values.Look(ref enabled, "enabled");
-            Scribe_Values.Look(ref colorA, "colorA");
             Scribe_Values.Look(ref colorB, "colorB");
             Scribe_Values.Look(ref mask, "mask");
+            
+            Scribe_Values.Look(ref desiredEnabled, "desiredEnabled");
+            Scribe_Values.Look(ref desiredColorB, "desiredColorB");
+            Scribe_Values.Look(ref desiredMask, "desiredMask");
         }
     }
 }
