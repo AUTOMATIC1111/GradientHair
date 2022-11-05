@@ -2,129 +2,154 @@
 <Defs>
 	<GradientHairMaskDef>
         <defName>MaskAHigh3</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskAHigh3</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskAHigh2</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskAHigh2</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskAHigh</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskAHigh</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskAMidHigh</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskAMidHigh</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskAMidLow</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskAMidLow</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskALow</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskALow</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskALow2</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskALow2</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskALow3</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskALow3</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
     
 	<GradientHairMaskDef>
         <defName>MaskBHigh3</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBHigh3</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBHigh2</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBHigh2</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBHigh</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBHigh</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBMidHigh</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBMidHigh</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBMidLow</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBMidLow</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBLow</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBLow</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBLow2</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBLow2</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskBLow3</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskBLow3</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
     
 	<GradientHairMaskDef>
         <defName>MaskCHigh3</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCHigh3</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCHigh2</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCHigh2</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCHigh</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCHigh</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCMidHigh</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCMidHigh</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCMidLow</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCMidLow</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCLow</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCLow</mask>
         <weight>1</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCLow2</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCLow2</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
 	<GradientHairMaskDef>
         <defName>MaskCLow3</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskCLow3</mask>
         <weight>0.05</weight>
 	</GradientHairMaskDef>
     
 	<GradientHairMaskDef>
         <defName>MaskNone</defName>
+	<texPath>noGraphic</texPath>
         <mask>GradientHair/MaskNone</mask>
         <weight>0</weight>
 	</GradientHairMaskDef>
