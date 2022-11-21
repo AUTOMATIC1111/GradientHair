@@ -17,6 +17,8 @@ namespace Verse
         public int order = 0;
 
         public GradientHairMaskDef() {
+            noGraphic = true;
+
             styleGender = StyleGender.Any;
         }
 

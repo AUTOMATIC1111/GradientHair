@@ -21,7 +21,7 @@ namespace GradientHair.Patch
             GradientHairSettings settings = comp.Settings;
             if (!settings.enabled) return;
 
-            __instance.hairGraphic = Graphic_MultiMask.Get(__instance.pawn.story.hairDef.texPath, settings.mask, __instance.pawn.story.hairColor, settings.colorB);
+            __instance.hairGraphic = Graphic_MultiMask.Get(__instance.pawn.story.hairDef.texPath, settings.mask, __instance.pawn.story.HairColor, settings.colorB);
         }
     }
 
@@ -38,7 +38,7 @@ namespace GradientHair.Patch
             if (!settings.enabled) return;
 
             if (__instance.hairGraphic is Graphic_MultiMask) return;
-            __instance.hairGraphic = Graphic_MultiMask.Get(__instance.pawn.story.hairDef.texPath, settings.mask, __instance.pawn.story.hairColor, settings.colorB);
+            __instance.hairGraphic = Graphic_MultiMask.Get(__instance.pawn.story.hairDef.texPath, settings.mask, __instance.pawn.story.HairColor, settings.colorB);
         }
     }
 }

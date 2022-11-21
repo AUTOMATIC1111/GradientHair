@@ -56,7 +56,7 @@ namespace GradientHair
 
             if (enabled)
             {
-                pawn.story.hairColor = colorA;
+                pawn.story.HairColor = colorA;
             }
         }
 

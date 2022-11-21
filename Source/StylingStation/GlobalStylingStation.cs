@@ -27,7 +27,7 @@ namespace GradientHair.StylingStation
         {
             if (dialog == null) return;
             float num = rect.y;
-            Widgets.ColorSelector(new Rect(rect.x, num, rect.width, 92f), ref settings.colorB, AllHairColors, null, 22, 2);
+            Widgets.ColorSelector(new Rect(rect.x, num, rect.width, 92f), ref settings.colorB,  AllHairColors, out _, null, 22, 2);
             //num += 60f;
         }
 
