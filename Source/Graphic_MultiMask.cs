@@ -97,7 +97,7 @@ namespace GradientHair
         public override void Init(GraphicRequest req)
         {
             string[] args = req.path.Split('\0');
-            string mask = args[1];
+            maskPath = args.Length > 1 ? args[1] : req.maskPath;
             path = args[0];
             data = req.graphicData;
             color = req.color;
@@ -162,10 +162,10 @@ namespace GradientHair
             Texture2D[] array2 = new Texture2D[mats.Length];
             if (req.shader.SupportsMaskTex())
             {
-                array2[0] = ContentFinder<Texture2D>.Get(mask, false);
-                array2[1] = ContentFinder<Texture2D>.Get(mask, false);
-                array2[2] = ContentFinder<Texture2D>.Get(mask, false);
-                array2[3] = ContentFinder<Texture2D>.Get(mask, false);
+                array2[0] = ContentFinder<Texture2D>.Get(maskPath, false);
+                array2[1] = ContentFinder<Texture2D>.Get(maskPath, false);
+                array2[2] = ContentFinder<Texture2D>.Get(maskPath, false);
+                array2[3] = ContentFinder<Texture2D>.Get(maskPath, false);
             }
             for (int i = 0; i < mats.Length; i++)
             {
