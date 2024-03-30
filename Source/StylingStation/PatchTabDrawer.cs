@@ -18,7 +18,8 @@ namespace GradientHair.StylingStation
         {
             return typeof(TabDrawer)
                 .GetMethods()
-                .Single(m => m.Name == "DrawTabs" && m.IsGenericMethodDefinition)
+                .Where(m => m.Name == "DrawTabs" && m.IsGenericMethodDefinition)
+                .Last()
                 .MakeGenericMethod(typeof(TabRecord));
 
         }

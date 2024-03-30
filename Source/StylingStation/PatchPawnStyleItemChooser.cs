@@ -11,8 +11,8 @@ namespace GradientHair.StylingStation
 {
 
     // the result of this function is used for ordering in the dialog
-    [HarmonyPatch(typeof(PawnStyleItemChooser), "StyleItemChoiceLikelihoodFor")]
-    class PatchPawnStyleItemChooserStyleItemChoiceLikelihoodFor
+    [HarmonyPatch(typeof(PawnStyleItemChooser), "StyleItemChoiceLikelihoodFromTags")]
+    class PatchPawnStyleItemChooserStyleItemChoiceLikelihoodFromTags
     {
         static bool Prefix(ref float __result, StyleItemDef styleItem)
         {
